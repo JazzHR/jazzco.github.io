@@ -41,11 +41,11 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: Helvectica, Arial, sans-serif, Georgia, "Times New Roman", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -312,13 +312,32 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 4em;
+  color: #2b333a;
+  font-family: Helvectica, Arial, sans-serif, Georgia;
+}
+.post a {
+    color: #87919b;
+}
+.post a:hover {
+    color: #959ea7;
+    text-decoration: none;
+}
+.post a:focus {
+    color: #959ea7;
+    text-decoration: none;
 }
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #2b333a;
+  font-family: "OpenSans", Helvectica, Arial, sans-serif;
+}
+.page-title,
+.post-title,
+.post-title a:hover {
+    color: #5a2d8a;
 }
 .page-title,
 .post-title {
