@@ -309,21 +309,29 @@ a.sidebar-nav-item:focus {
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
+ .message {
+     background-color: #f1f3f3;
+     color: #2b333a;
+ }
+
 .page,
 .post {
   margin-bottom: 4em;
   color: #2b333a;
   font-family: Helvectica, Arial, sans-serif, Georgia;
 }
+.page a,
 .post a {
     color: #87919b;
 }
+.page a:hover,
 .post a:hover {
-    color: #959ea7;
+    color: #5a2d8a;
     text-decoration: none;
 }
+.page a:focus,
 .post a:focus {
-    color: #959ea7;
+    color: #5a2d8a;
     text-decoration: none;
 }
 
@@ -334,7 +342,6 @@ a.sidebar-nav-item:focus {
   color: #2b333a;
   font-family: "OpenSans", Helvectica, Arial, sans-serif;
 }
-.page-title,
 .post-title,
 .post-title a:hover {
     color: #5a2d8a;
