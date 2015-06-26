@@ -8,7 +8,6 @@ relative_permalinks: true
 title:               Jazz
 tagline:             'Engineering Blog'
 url:                 http://jazzco.github.io
-baseurl:             ''
 paginate:            5
 
 # About/contact
