@@ -12,7 +12,7 @@
 
 ## Local Development
 
-### Installation Instructions
+### Installation
 These instructions assume you are using [RVM](https://rvm.io/).
 
     rvm install 2.1.1
