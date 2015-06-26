@@ -5,8 +5,8 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Jazz Engineering Blog
-tagline:             'Now 25% more AngularJS'
+title:               Jazz
+tagline:             'Engineering Blog'
 url:                 http://jazzco.github.io
 baseurl:             ''
 paginate:            5
