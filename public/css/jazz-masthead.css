@@ -20,6 +20,14 @@
   color: #fff;
   text-decoration: none;
 }
+
+.masthead-logo {
+    display: inline-block;
+    height: 27px;
+    width: 55px;
+    vertical-align: middle;
+}
+
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
