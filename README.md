@@ -7,7 +7,7 @@
 - [Local Development](#local-development)
   - [Installation](#installation)
   - [How to Run](#how-to-run)
-- [Theme Author](#author)
+- [Theme Author](#theme-author)
 - [License](#license)
 
 ## Local Development
