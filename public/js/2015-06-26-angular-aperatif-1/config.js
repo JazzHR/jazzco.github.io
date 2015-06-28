@@ -21,7 +21,7 @@
                 controllerAs: "list",
                 resolve: {},
                 templateUrl: "/public/partials/2015-06-26-angular-aperatif-1/contactsList.html",
-                url: "/"
+                url: ""
             })
             .state('contacts.edit', {
                 controller: "ContactsEditCtrl",
