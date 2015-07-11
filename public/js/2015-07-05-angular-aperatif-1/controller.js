@@ -15,7 +15,8 @@
         vm.contacts = demoService.getContacts();
         vm.newContact = {
             firstName: "",
-            lastName: ""
+            lastName: "",
+            phone: ""
         };
 
         // Methods
@@ -26,10 +27,11 @@
             demoService.addContact(contact);
             vm.newContact.firstName = "";
             vm.newContact.lastName = "";
+            vm.newContact.phone = "";
         }
 
         function removeContact(index) {
-            var isRemoving = confirm("Are you sure you want to remove " + vm.contacts[index].firstName + " from your contacts?");
+            var isRemoving = confirm("Are you sure you want to remove " + vm.contacts[index].firstName + " " + vm.contacts[index].lastName +  " from your contacts?");
             if (isRemoving) demoService.removeContact(index);
         }
     }
