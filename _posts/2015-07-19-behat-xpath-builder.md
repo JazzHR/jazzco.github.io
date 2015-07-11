@@ -4,16 +4,16 @@ title: Building XPath selectors for Behat
 tags: behat php
 ---
 
-We were a small team when we started using Behat for integration testing. At first, we used CSS selectors to interact with the DOM. This worked, until the app evolved from jQuery to Angular. We no longer had convenient IDs and classes to latch onto.
+When we first started using Behat for integration testing we used CSS selectors to interact with the DOM. This worked well until we migrated from jQuery to Angular in our application. We stopped placing IDs on most elements because we no longer were using jQuery to target elements in our clientside Javascript. As a side effect this also meant that we no longer could reliably use CSS selectors to target elements in testing.
 
-We adopted XPath, mostly because it enabled us to select elements based on text. The problem is, most web developers are familiar with CSS selectors, but they've never tried XPath. Since the automation team was small (about 1.1 people), I focused on simplicity. I wanted Behat to be approachable, so developers had less hurdles when they wrote their own tests.
+We began using XPath selecctors because it enabled us to target elements based on text. One problem we ran into is that while most web developers are familiar with CSS selectors they are not familiar with XPath. I built a class for building XPath selectors in Behat with a focus on simplicity. I needed to keep it simple because I wanted our automated tests to be approachable so that developers had fewer hurdles when they wrote their own tests.
 
 Here's an example of how we might interact with a modal:
 
     $ModalTitle = DomBy(
         "tag"       , "div"              ,
         "has class" , "modal-title"      ,
-        "has text"  , "Change Status"    )
+        "has text"  , "Change Status"    );
 
     $Modal = $ModalTitle
         ->Ancestor("div");
@@ -35,9 +35,9 @@ Here's an example of how we might interact with a modal:
         "is text" , "Save"   )
         ->Click();
 
-The DomBy functions convert the list of arguments into an XPath.
+The DomBy function uses its list of arguments to create an XPath selector. If an element is found it returns an object that represents the matching element.
 
-This is how we might assert the contents of a table:
+Here's an example of how we can assert the contents of a table:
 
     $ExpectedValues = array(
         array("Dave Allen"    , "Software Engineer" ),
