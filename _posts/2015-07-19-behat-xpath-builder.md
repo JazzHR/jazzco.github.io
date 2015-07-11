@@ -6,7 +6,7 @@ tags: behat php
 
 When we first started using Behat for integration testing we used CSS selectors to interact with the DOM. This worked well until we migrated from jQuery to Angular in our application. We stopped placing IDs on most elements because we no longer were using jQuery to target elements in our clientside Javascript. As a side effect this also meant that we no longer could reliably use CSS selectors to target elements in testing.
 
-We began using XPath selecctors because it enabled us to target elements based on text. One problem we ran into is that while most web developers are familiar with CSS selectors they are not familiar with XPath. I built a class for building XPath selectors in Behat with a focus on simplicity. I needed to keep it simple because I wanted our automated tests to be approachable so that developers had fewer hurdles when they wrote their own tests.
+We began using XPath selectors because it enabled us to target elements based on the text that they contain. One problem that we ran into is that while most web developers are familiar with CSS selectors they are not familiar with XPath. I built a class for building XPath selectors in Behat with a focus on simplicity. I needed to keep it simple because I wanted our automated tests to be approachable so that developers had fewer hurdles when they wrote their own tests.
 
 Here's an example of how we might interact with a modal:
 
