@@ -60,7 +60,7 @@ Here's an example of how we can assert the contents of a table:
     $Trs = DomBy(
         "id" , "employee-table" )
         ->DomsBy(
-        "tag" , "tr" );
+        "tag" , "tr"            );
 
     AssertEqual(
         $ExpectedRowCount,
