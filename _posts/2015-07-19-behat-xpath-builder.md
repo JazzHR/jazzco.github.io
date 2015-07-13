@@ -49,10 +49,10 @@ Here's an example of how we can assert the contents of a table:
 <?php
 
     $ExpectedValues = array(
-        array("Dave Allen"    , "Software Engineer" ),
-        array("Gabe Miller"   , "Software Engineer" ),
-        array("Cory Trimm"    , "Automation Intern" ),
-        array("Nathan Donato" , "Technical Writer"  ),
+        array("Dave Allen"    , "Software Engineer"   ),
+        array("Gabe Miller"   , "Software Engineer"   ),
+        array("Cory Trimm"    , "Automation Engineer" ),
+        array("Nathan Donato" , "Automation Engineer" ),
         );
 
     $ExpectedRowCount = sizeof($ExpectedValues);
