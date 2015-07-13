@@ -47,8 +47,11 @@ author: Author Name
 ---
 ```
 `layout`: always going to be post. This may change in the future if we need to add special post formats for embedding code samples.
+
 `title`: clearly the title of your post, you can be more verbose here than in the slug for your post title.
+
 `tags`: where you will identify some information about your post, ideally something specific like the language and framework mentioned in the post.
+
 `author`: this is your name.
 
 For highlighting code snippets in posts, we use pygments. For more info on using that in Jekyll, checkout the [Jekyll docs](http://jekyllrb.com/docs/posts/#highlighting-code-snippets).
