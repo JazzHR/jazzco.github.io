@@ -57,10 +57,8 @@ Here's an example of how we can assert the contents of a table:
 
     $ExpectedRowCount = sizeof($ExpectedValues);
 
-    $Trs
-        ->DomBy(
+    $Trs = DomBy(
         "id" , "employee-table" )
-
         ->DomsBy(
         "tag" , "tr" );
 
