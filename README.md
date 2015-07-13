@@ -9,6 +9,7 @@
   - [How to Run](#how-to-run)
 - [Contributing](#contributing)
   - [Post Formatting and Setup](#post-formatting-and-setup)
+  - [Submitting a Post](#submitting-a-post)
 - [Theme Author](#theme-author)
 - [License](#license)
 
