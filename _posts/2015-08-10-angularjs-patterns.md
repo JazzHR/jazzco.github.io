@@ -57,7 +57,7 @@ Well, it depends on the context. And even in a given context, there is not a rig
 
 For the purposes of this post, there are two abstract service levels that I have conceptualized – _API_ and _feature_ services. Each of these levels can (and should, for complex features) contain more than one level, but as I mentioned before, that sort of breakdown depends on the context and is not easily generalized into some pattern.
 
-**API services** define flexible wrapper methods around API endpoints that can be used across many features in your application. The main goal is to centralize the touchpoints to your API such that when an endpoint definition changes, that only affects one place in your front end code. Note that these services are analogous to [resources](https://docs.angularjs.org/api/ngResource/service/$resource) or other [similar solutions](https://github.com/mgonto/restangular) – none of which I have used extensively.
+<a name="api-services"></a>**API services** define flexible wrapper methods around API endpoints that can be used across many features in your application. The main goal is to centralize the touchpoints to your API such that when an endpoint definition changes, that only affects one place in your front end code. Note that these services are analogous to [resources](https://docs.angularjs.org/api/ngResource/service/$resource) or other [similar solutions](https://github.com/mgonto/restangular) – none of which I have used extensively.
 
 Most of these API services simply hit up an API endpoint and return the relevant promise. These methods can certainly accept a query string object parameter to enable flexible requests; however, they should not contain any excessive business logic (i.e. this is probably not the place to trigger a confirmation dialog). When unsure, just keep asking yourself: What will enable me to use this method in any context across my application?
 
@@ -76,7 +76,7 @@ function save(feature) {
 }
 {% endhighlight %}
 
-**Feature services** define reusable logic that can be used across multiple feature controllers. They actually don’t _have_ to be used across multiple controllers, but that’s the idea to keep in mind. The main goal is to eliminate excessive controller logic such that controllers are only concerned about the purposes defined in the last section of this post.
+<a name="feature-services"></a>**Feature services** define reusable logic that can be used across multiple feature controllers. They actually don’t _have_ to be used across multiple controllers, but that’s the idea to keep in mind. The main goal is to eliminate excessive controller logic such that controllers are only concerned about the purposes defined in the last section of this post.
 
 The most obvious example involves the scenario in which a feature exposes the same functionality in multiple different places. For example, assume that the same modal is used to _create_ and _edit_ an entity. The method that opens this modal should be defined in a feature service. A reference to this method would then be exposed on scope in two different places, but the underlying logic is defined once.
 
