@@ -5,33 +5,33 @@
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
- .message {
-     background-color: #f1f3f3;
-     color: #2b333a;
- }
+.message {
+    background-color: #f1f3f3;
+    color: #2b333a;
+}
 
 .page,
 .post {
-  margin-bottom: 4em;
-  color: #2b333a;
-  font-family: Helvectica, Arial, sans-serif, Georgia;
+    margin-bottom: 4em;
+    color: #2b333a;
+    font-family: Helvectica, Arial, sans-serif, Georgia;
 }
+
 .page a,
 .post a {
-    color: #87919b;
-}
-.page a:hover,
-.post a:hover {
     color: #5a2d8a;
-    text-decoration: none;
 }
+
+.page a:hover,
+.post a:hover,
 .page a:focus,
 .post a:focus {
-    color: #5a2d8a;
+    border-bottom: 1px solid #5a2d8a;
     text-decoration: none;
 }
 
 /* Blog post or page title */
+
 .page-title,
 .post-title,
 .post-title a {
@@ -48,6 +48,7 @@
 }
 
 /* Meta data line below post title */
+
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -56,26 +57,40 @@
 }
 
 /* Related posts */
+
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
+
 .related-posts {
   padding-left: 0;
   list-style: none;
 }
+
 .related-posts h3 {
   margin-top: 0;
 }
+
 .related-posts li small {
   font-size: 75%;
   color: #999;
 }
+
 .related-posts li a:hover {
   color: #268bd2;
   text-decoration: none;
 }
+
 .related-posts li a:hover small {
   color: inherit;
+}
+
+/* Jekyll Pygments */
+
+.highlight pre {
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
 }
