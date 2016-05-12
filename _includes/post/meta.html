@@ -1,0 +1,14 @@
+<span class="post-date">
+  {% if include.post_date %}
+    {{ include.post_date | date_to_string }}
+  {% endif %}
+
+  by
+
+  {% assign authorMeta = site.data.authors[include.post_author] %}
+  {% if authorMeta %}
+    <a href="//github.com/{{ authorMeta.github }}" target="_blank">{{ include.post_author }}</a>
+  {% elsif include.post_author %}
+    {{ include.post_author }}
+  {% endif %}
+</span>
