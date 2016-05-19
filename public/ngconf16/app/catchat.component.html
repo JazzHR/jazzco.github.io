@@ -1,0 +1,15 @@
+<div class="message-container">
+    <div class="message" *ngFor="let msg of messages | async">
+        <avatar [author]="msg.author"></avatar>
+        <div class="text-wrapper">
+            <p class="author">{{ msg.author | format: 'name'}}</p>
+            <p title="{{msg.text}}">{{msg.text | format: 'cat'}}</p>
+        </div>
+    </div>
+</div>
+<div class="input-container">
+    <form (ngSubmit)="sendMessage(model)">
+        <input type="text" [(ngModel)]="model" placeholder="Enter your message">
+        <button type="submit">Send</button>
+    </form>
+</div>

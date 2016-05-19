@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";AAAA,4BAA0B,eAAe,CAAC;AAAlC,gDAAkC;AAC1C,kCAAkC,qBAAqB,CAAC;AAAhD,sEAAgD","sourcesContent":["export {environment} from './environment';\nexport {CatchatAppComponent} from './catchat.component';\n"]}

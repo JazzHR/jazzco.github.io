@@ -1,0 +1,40 @@
+.message-container {
+    border: 1px solid #ccc;
+    margin: 2em;
+}
+
+.message {
+    background-color: #fefefe;
+    height: 170px;
+    margin: 0;
+    padding: 1em;
+}
+
+.message:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+.message .text-wrapper {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.message .author {
+    font-weight: bold;
+}
+
+.input-container {
+    margin: 2em;
+    width: 100%;
+}
+
+.input-container input {
+    height: 37px;
+    padding: 4px;
+    width: 400px;
+}
+
+.input-container button {
+    height: 37px;
+    width: 50px;
+}

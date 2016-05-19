@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";;;;AAAA,iBAAc,UAAU,CAAC,EAAA;AACzB,iBAAc,qBAAqB,CAAC,EAAA;AACpC,iBAAc,eAAe,CAAC,EAAA","sourcesContent":["export * from './avatar';\nexport * from './pipes/format.pipe';\nexport * from './cat.service';\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"interfaces.js","sourceRoot":"","sources":["interfaces.ts"],"names":[],"mappings":"","sourcesContent":["export interface Author {\n  id: number\n  name: string\n}\n\nexport interface Message {\n  text: string\n  author: Author\n}"]}
