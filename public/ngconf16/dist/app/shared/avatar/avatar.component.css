@@ -1,0 +1,9 @@
+.avatar {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.avatar img {
+    height: 128px;
+    width: 128px;
+}
